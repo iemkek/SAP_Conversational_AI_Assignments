@@ -2,11 +2,11 @@
 
 The webhook is a simple script running on a server. This script can be extended to perform any action you can think of. One of the possibilities is to perform calls on third party services like an address lookup. This is exactly what we will do in this assignment.
 
-At the end of this exercise we want to achieve the following functionality
+At the end of this exercise we want to achieve the following functionality:
 ![Address lookup result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookupTest.png)
 
 ###### Webhook
-To perform the address lookup, an additional function is needed in the webhook.js file. This function will call a simple third-party service that takes a postal code in the url and returns the corresponsing street and city it is in.
+To perform the address lookup, an additional function is needed in the webhook.js file. This function will call a simple third-party service that takes a postal code in the url and returns the corresponsing street and city. The result can then be saved using the chatbot memory functionality so it can be used at a later stage.
 
 ## Step 1: Add the address lookup function to the webhook.js file
 Add the following code to the webhook.js file.
