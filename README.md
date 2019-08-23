@@ -1,11 +1,12 @@
 # Assignment 3 - Address lookup and user interaction
 
-The webhook is a simple script running on a server. This script can be extended to perform any action you can think of. One of the possibilities is to perform calls on third party services like an address lookup.
+The webhook is a simple script running on a server. This script can be extended to perform any action you can think of. One of the possibilities is to perform calls on third party services like an address lookup. This is exactly what we will do in this assignment.
 
 ###### Webhook
 To perform the address lookup, an additional function is needed in the webhook.js file. This function will call a simple third-party service that takes a postal code in the url and returns the corresponsing street and city it is in.
 
 ## Step 1: Add the address lookup function to the webhook.js file
+Add the following code to the webhook.js file.
 
 ```javascript
 app.post('/postAddressLookup', (req, res) => {
@@ -80,7 +81,7 @@ app.post('/postAddressLookup', (req, res) => {
 ```
 
 ## Step 2: Push the updated project to SCP Cloud Foundry
-Use the following command to push your changes to the SCP Cloud Foundry environment:
+In the command prompt, use the following command (make sure you are in the main app directory) to push your changes to the SCP Cloud Foundry environment:
 
 ```
 cf push
