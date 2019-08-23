@@ -1,5 +1,8 @@
 # Assignment 4 - Business Partner registration on S4/HANA
 
+At the end of this exercise we want to achieve the following functionality:
+![Business Partner registration result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/BusinessPartnerRegistrationOnS4HANATest.png)
+
 ## Webhook
 
 #### Step 1: Add the create business partner function to the webhook.js file
@@ -120,6 +123,8 @@ Go to the Build tab and select the Actions tab. Choose ADD A NEW MESSAGE GROUP a
 
 Add the following IF statement: IF _sentiment positive OR _sentiment very positive.
 
+![Add new message group](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/BusinessPartnerRegistrationOnS4HANA1.png)
+
 #### Step 2: Test it
 Test your chatbot by pressing the CHAT WITH YOUR BOT button.
 - Type the expression that you entered and look at the bot response
@@ -127,7 +132,7 @@ Test your chatbot by pressing the CHAT WITH YOUR BOT button.
 - Now type your postal code together with your house number in the correct format
 - Now select Yes
 
-
+![Business Partner registration result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/BusinessPartnerRegistrationOnS4HANATest.png)
 
 # Continue to the next assignment
 [Assignment 5 - Business partner lookup on S/4HANA](https://github.com/iemkek/SAP_Conversational_AI_Assignments/tree/5_Business_Partner_lookup_on_S4HANA)
