@@ -125,10 +125,10 @@ Add the following IF statement: IF #postcode-housenumber is-present.
 ![Add new message group](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookup5.png)
 
 #### Step 6: Test it
-Test your chatbot by pressing the CHAT WITH YOUR BOT button. 
-- Type the expression that you entered and look at the bot response. 
-- Now type your first and last name.
-- Now type your postal code together with your house number in the correct format.
+Test your chatbot by pressing the CHAT WITH YOUR BOT button.
+- Type the expression that you entered and look at the bot response
+- Now type your first and last name
+- Now type your postal code together with your house number in the correct format
 
 ![Address lookup result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookupTest.png)
 
