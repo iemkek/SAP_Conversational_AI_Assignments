@@ -9,7 +9,7 @@ At the end of this exercise we want to achieve the following functionality:
 To perform the address lookup, an additional function is needed in the webhook.js file. This function will call a simple third-party service that takes a postal code in the url and returns the corresponsing street and city. The result can then be saved using the chatbot memory functionality so it can be used at a later stage.
 
 #### Step 1: Add the address lookup function to the webhook.js file
-Add the following code to the webhook.js file.
+Add the following code to the webhook.js file:
 
 ```javascript
 app.post('/postAddressLookup', (req, res) => {
