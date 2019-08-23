@@ -92,6 +92,7 @@ cf push
 
 
 ## SAP Conversational AI
+An additional entity is needed in the chatbot to store the postal code and house number input from the user. Before the chatbot will recognize the pattern of the postal code and house number, we need to train it by feeding it some more expressions. In these expressions we need to specify what is our entity. Only then will the chatbot recognize the postal code and house number pattern and pass it along correctly to a new message group. In this message group a call to the webhook needs to be performed to the corresponding webhook function.
 
 #### Step 1: Create new entity
 Go to the Entities tab and press the CREATE button.
