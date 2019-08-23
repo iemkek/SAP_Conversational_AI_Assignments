@@ -1,9 +1,11 @@
 # Assignment 4 - Business Partner registration on S4/HANA
+A more common use case for all of us would probably be in the area of communicating with an SAP system. We can easily do this by calling an OData service. In this assignment we will use the Innov8ion/iQibt S/4HANA system. Using the name and address data a call to a custom OData service will be performed. On the S/4HANA system a Business Partner will be created and the resulting Business Partner number will be returned. The number will than be communicated back to the user using a 'card' response.
 
 At the end of this exercise we want to achieve the following functionality:
 ![Business Partner registration result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/BusinessPartnerRegistrationOnS4HANATest.png)
 
 ## Webhook
+To create a Business Partner on the S/4HANA system, an additional function is needed. This function will first fetch a CSRF token from the S/4HANA system, after which the actual create call will take place. We will send all the data that is collected in the chatbot memory in this call.
 
 #### Step 1: Add the create business partner function to the webhook.js file
 Add the following code to the webhook.js file:
@@ -31,8 +33,8 @@ app.post('/postCreateBusinessPartner', (req, res) => {
 	  url: sUrl,
 	  baseURL: sBaseUrl,
 	  auth: {
-		username: 'IQIBT16',
-		password: 'Innov8ion2019'
+		username: 'XXXXXXX',
+		password: 'XXXXXXX'
 	  },
 	  headers: {'X-CSRF-Token': 'Fetch'}
 	})
@@ -62,8 +64,8 @@ app.post('/postCreateBusinessPartner', (req, res) => {
 		  url: sUrl,
 		  baseURL: sBaseUrl,
 		  auth: {
-			username: 'IQIBT16',
-			password: 'Innov8ion2019'
+			username: 'XXXXXXX',
+			password: 'XXXXXXX'
 		  },
 		  headers: {
 			'Content-Type': 'application/json',
@@ -117,6 +119,7 @@ cf push
 ```
 
 ## SAP Conversational AI
+SAP Conversational AI can recognize the sentiment of a message. In this assignment the chatbot should respond on the message 'yes' and it can recognize the sentiment in this to be 'positive' or 'very positive'. This will be the condition for the new message group we are going to create.
 
 #### Step 1: Add new message group
 Go to the Build tab and select the Actions tab. Choose ADD A NEW MESSAGE GROUP and select CALL WEBHOOK. Enter the application URL followed by '/postCreateBusinessPartner'.
