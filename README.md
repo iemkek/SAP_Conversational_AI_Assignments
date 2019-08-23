@@ -5,10 +5,10 @@ The webhook is a simple script running on a server. This script can be extended 
 At the end of this exercise we want to achieve the following functionality:
 ![Address lookup result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookupTest.png)
 
-###### Webhook
+## Webhook
 To perform the address lookup, an additional function is needed in the webhook.js file. This function will call a simple third-party service that takes a postal code in the url and returns the corresponsing street and city. The result can then be saved using the chatbot memory functionality so it can be used at a later stage.
 
-## Step 1: Add the address lookup function to the webhook.js file
+#### Step 1: Add the address lookup function to the webhook.js file
 Add the following code to the webhook.js file.
 
 ```javascript
@@ -83,7 +83,7 @@ app.post('/postAddressLookup', (req, res) => {
 });
 ```
 
-## Step 2: Push the updated project to SCP Cloud Foundry
+#### Step 2: Push the updated project to SCP Cloud Foundry
 In the command prompt, use the following command (make sure you are in the main app directory) to push your changes to the SCP Cloud Foundry environment:
 
 ```
@@ -91,9 +91,47 @@ cf push
 ```
 
 
-###### SAP Conversational AI
+## SAP Conversational AI
 
+#### Step 1: Create new entity
+Go to the Entities tab and press the CREATE button.
 
+![Create new entity](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookup1.png)
 
-# Continue to the next assignment
+#### Step 2: Enter entity details
+Enter the entity name 'postcode-housenumber' and choose the 'Free entity' option. Now press the CREATE button.
+
+![Enter entity details](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookup2.png)
+
+#### Step 3: Add expressions for this entity
+Go to the @createbp intent and add two more expressions:
+- 1234 AA 1
+- 9999 XY 123
+
+![Add expressions for this entity](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookup3.png)
+
+#### Step 4: Recognizing the entity in the expression
+Select the text of the first newly added expression completely. Now select the entity 'postcode-housenumber'.
+
+Do the same for the second expression.
+
+![Recognizing the entity in the expression](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookup4.png)
+
+#### Step 5: Add new message group
+Go to the Build tab and select the Actions tab. Choose ADD A NEW MESSAGE GROUP and select CALL WEBHOOK. Enter the application URL followed by '/postAddressLookup'
+
+Add the following IF statement:
+IF #postcode-housenumber is-present
+
+![Add new message group](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookup5.png)
+
+#### Step 6: Test it
+Test your chatbot by pressing the CHAT WITH YOUR BOT button. 
+- Type the expression that you entered and look at the bot response. 
+- Now type your first and last name.
+- Now type your postal code together with your house number in the correct format.
+
+![Address lookup result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookupTest.png)
+
+## Continue to the next assignment
 [Assignment 4](https://github.com/iemkek/SAP_Conversational_AI_Assignments/tree/4_Business_Partner_registration_on_S4HANA)
