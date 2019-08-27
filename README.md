@@ -1,6 +1,6 @@
 # Assignment 3 - Address lookup and user interaction
 
-The webhook is a simple script running on a server. In our specific case it is a Node.js script running on SCP Cloud Foundry. This script can be extended to perform any action you want. One of the possibilities is to perform calls on third party services like an address lookup. This is exactly what we will do in this assignment. After that, we want to make the user confirm his address to us using a "buttons" reply. This allows the user to simply click an option instead of typing his response.
+The webhook is a simple script running on a server. In our specific case it is a Node.js script running on SCP Cloud Foundry. This script can be extended to perform any action you want. One of the possibilities is to perform calls on third party services like an address lookup. This is exactly what we will do in this assignment. After that, we want to make the user confirm his address to the bot using a "buttons" reply. This allows the user to simply click an option instead of typing his response.
 
 At the end of this exercise we want to achieve the following functionality:
 ![Address lookup result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookupTest.png)
