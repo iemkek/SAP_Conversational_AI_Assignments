@@ -60,7 +60,7 @@ Test your chatbot by pressing the CHAT WITH YOUR BOT button. Type the expression
 
 #### Summary
 
-A user gives an input to the chatbot. If the bot can recognize this input through expressions, it can detect the corresponding intent. When an intent is detected, a skill gets executed and the bot can give a response to the user.
+A user gives an input to the chatbot. The bot can recognize this input through **expressions**, it can detect the **intent** corresponding to the expression. When an intent is detected, a **skill** can get executed and the bot can give a response to the user.
 
 #### Questions
 
