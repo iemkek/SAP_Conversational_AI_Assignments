@@ -13,6 +13,20 @@ Open a command prompt window and navigate to your webhook application folder. En
 ```
 npm init
 ```
+You will be prompted to answer a few questions. Enter the following:
+
+```
+package name: (webhookRecast) <ENTER>
+version: (1.0.0) <ENTER>
+description: <ENTER>
+entry point: (index.js) webhook.js <ENTER>
+test command: <ENTER>
+git repository: <ENTER>
+keywords: <ENTER>
+author: <ENTER>
+license: (ISC) <ENTER>
+Is this OK? (yes) <ENTER>
+```
 This will create a package.json file in the folder.
 
 #### Step 3: Extend package.json
