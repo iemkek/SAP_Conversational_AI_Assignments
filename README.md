@@ -9,7 +9,7 @@ Create a new bot in the SAP Conversational AI environment by clicking the NEW BO
 
 ![Create bot](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponse1.png)
 
-#### Step 2: Fill bot details
+#### Step 2: Enter bot details
 Fill atleast the following details:
 - Bot name (createbp)
 - Type of data (Non-personal)
