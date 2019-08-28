@@ -30,6 +30,17 @@ Open the package.json file and add "engines" and "scripts" section so it looks s
 }
 ```
 
+#### Step 4: The manifest file
+In your webhook application folder, create a file called manifest.yml and open it. Add the code you see below and change <UNIQUE_APPLICATION_NAME> with your own unique name.
+
+```yaml
+---
+applications:
+- name: <UNIQUE_APPLICATION_NAME>
+  path: .
+  memory: 128M
+```
+
 ## SAP Conversational AI
 
 #### Step 1:
