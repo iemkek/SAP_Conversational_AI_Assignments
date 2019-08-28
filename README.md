@@ -8,7 +8,7 @@
 Create a new folder for your webhook application
 
 #### Step 2: Initialize the application
-Open a command prompt window and navigate to your webhook application folder. Enter command the following command and press enter:
+Open a command prompt window and navigate to your webhook application folder. Enter the following command and press enter:
 
 ```
 npm init
