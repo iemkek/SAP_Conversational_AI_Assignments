@@ -8,7 +8,12 @@
 Create a new folder for your webhook application
 
 #### Step 2: Initialize the application
-Open a command prompt window and navigate to your webhook application folder. Enter command "npm init" and press enter. This will create a package.json file in the folder.
+Open a command prompt window and navigate to your webhook application folder. Enter command the following command and press enter:
+
+```
+npm init
+```
+This will create a package.json file in the folder.
 
 #### Step 3: Extend package.json
 Open the package.json file and add "engines" and "scripts" section so it looks similar to this:
@@ -97,11 +102,19 @@ var server = app.listen(PORT, function () {
 ```
 
 #### Step 6: Install dependencies
-In the command prompt, navigate to the webhook application folder and enter the following command: "npm install express body-parser".
+In the command prompt, navigate to the webhook application folder and enter the following command:
+
+```
+npm install express body-parser
+````
 This will download and add the dependent libraries for the application.
 
 #### Step 7: Push the application to Cloud Foundry
-In the command prompt, navigate to the webhook application folder and enter the following command: "cf push".
+In the command prompt, navigate to the webhook application folder and enter the following command: 
+
+```
+cf push
+```
 The application will now be deployed to the SCP Cloud Foundry environment.
 
 #### Step 8: Check your deployed application
@@ -124,7 +137,7 @@ IF #person.fullname is-present
 ```
 
 #### Step 2: Test it
-
+Test your chatbot by pressing the CHAT WITH YOUR BOT button. Type the expression "Register as business partner". Now enter your first and last name (make sure you use capitals) and look at the bot response.
 
 # Continue to the next assignment
 [Assignment 3](https://github.com/iemkek/SAP_Conversational_AI_Assignments/tree/3_Address_lookup_and_user_interaction)
