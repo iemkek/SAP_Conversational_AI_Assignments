@@ -25,7 +25,7 @@ Name your intent: createbp
 #### Step 4: Add expressions to intent
 Drill down into the intent you just created. Now add an expression to your intent. If a user types this expression, the bot can recognize it and connect it to the corresponding intent.
 
-Create expression: Register as business partner
+Enter expression: Register as business partner
 
 ![Add expressions](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponse4.png)
 
@@ -37,17 +37,20 @@ Name your skill: createbp
 ![Create skill](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponse5.png)
 
 #### Step 6: Skill trigger
-Drill down into the skill you just created. Now go to the Triggers tab and create the following trigger:
+Drill down into the skill you just created. Now go to the Triggers tab and enter the following trigger:
 
+```
 If @createbp is-present
+```
 
 ![Skill trigger](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponse6.png)
 
 #### Step 7: Define actions
 Go to the Actions tab. Press ADD NEW MESSAGE GROUP and then select SEND MESSAGE. In the message input field, enter:
 
+```
 Please give me your first and last name
-
+```
 ![Define actions](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponse7.png)
 
 #### Step 8: Test it
