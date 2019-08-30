@@ -1,7 +1,6 @@
 'use strict';
 const express = require('express');
 const bodyParser = require('body-parser');
-const axios = require('axios');
 
 const app = express();
 app.use(bodyParser.json());
@@ -34,6 +33,7 @@ app.post('/postFullName', (req, res) => {
 	
 });
 
+const axios = require('axios');
 app.post('/postAddressLookup', (req, res) => {
 	var sEntityName = 'postcode-housenumber';
 	var sPostalCodeHouseNumber = req.body.nlp.entities[sEntityName][0].raw;
