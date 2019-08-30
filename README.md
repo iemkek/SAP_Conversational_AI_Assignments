@@ -64,11 +64,5 @@ Test your chatbot by pressing the CHAT WITH YOUR BOT button. Type the expression
 
 A user gives an input to the chatbot. The bot can recognize this input through **expressions**, it can detect the **intent** corresponding to the expression. When an intent is detected, a **skill** can get executed and the bot can give a response to the user.
 
-#### Questions
-
-1.	How intelligent is the AI part in SAP Conversational AI?
-2.	This was a simple response. What are you missing?
-3.	Is this what you expected from building a chatbot?
-
 # Continue to the next assignment
 [Assignment 2](https://github.com/iemkek/SAP_Conversational_AI_Assignments/tree/2_Chatbot_with_response_from_webhook)
