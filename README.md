@@ -214,6 +214,56 @@ app.post('/postCreateBusinessPartner', (req, res) => {
 	  });	
 });
 
+app.post('/postGetBusinessPartner', (req, res) => {
+	var sBusinessPartnerNumber = req.body.nlp.entities.number[0].raw
+	console.log(sBusinessPartnerNumber);
+	
+	var sBaseUrl = 'http://iqibt-s4hana.sabaas.nl:8001';
+	var sUrl = '/sap/opu/odata/sap/ZGW_BUPA_SRV/BusinessPartnerSet';
+	var sFilter = "('" + sBusinessPartnerNumber + "')";
+	sUrl = sUrl + sFilter;
+	console.log(sUrl);
+	
+	axios({
+	  method: 'get',
+	  url: sUrl,
+	  baseURL: sBaseUrl,
+	  auth: {
+		username: 'IQIBT16',
+		password: 'Innov8ion2019'
+	  }
+	})
+	.then(function (response) { 
+	  console.log("****************************** GET BP SUCCESS *****************************");
+	  var data = response.data.d;
+	  console.log(data);
+	  
+	  
+	  
+	  	// Send back response to chatbot
+		res.send({
+			replies: [
+						{
+						  type: 'card',
+						  content: {
+							title: data.Businesspartnerfullname + ' - ' + data.Businesspartner,
+							subtitle: data.Streetname + ' ' + data.Housenumber + ', ' + data.Postalcode + ' ' + data.Cityname,
+							imageUrl: 'https://media.licdn.com/dms/image/C4E0BAQH9lwnKDWtBew/company-logo_400_400/0?e=1572480000&v=beta&t=wYK8bopvEmZQdhFnLnwq9okBQROfCqkVGA95UCFmlmA',
+							buttons: []
+						  }
+						}	
+					 ]
+		})
+	  
+	  
+	})
+	.catch(function (error) {
+	  console.log("****************************** GET BP ERROR *****************************");
+	  console.log(error);
+	});	
+	
+});
+
 // Set up webserver so we can receive HTTP requests from chatbot
 const PORT = process.env.PORT || 8088;
 var server = app.listen(PORT, function () {
