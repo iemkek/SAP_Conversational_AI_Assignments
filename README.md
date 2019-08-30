@@ -130,8 +130,17 @@ var server = app.listen(PORT, function () {
 });
 ```
 
-#### Step 2: Push the updated project to SCP Cloud Foundry
-In the command prompt, use the following command (make sure you are in the main app directory) to push your changes to the SCP Cloud Foundry environment:
+#### Step 2: Install dependencies
+In the command prompt, navigate to the webhook application folder and enter the following command:
+
+```
+npm install axios
+````
+
+This will download and add the dependent axios library for the application to the webhook application folder and to the package.json file.
+
+#### Step 3: Push the updated project to SCP Cloud Foundry
+In the command prompt, navigate to the webhook application folder and enter the following command to push your changes to the SCP Cloud Foundry environment (make sure you are still logged in to the Cloud Foundry environment as described [here]() in assignment 1):
 
 ```
 cf push
