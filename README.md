@@ -120,14 +120,22 @@ In the command prompt, navigate to the webhook application folder and enter the 
 ```
 npm install express body-parser
 ````
-This will download and add the dependent libraries for the application.
+
+This will download and add the dependent libraries for the application to the folder.
 
 #### Step 7: Push the application to Cloud Foundry
-In the command prompt, navigate to the webhook application folder and enter the following command: 
+In the command prompt, navigate to the webhook application folder and login to the Cloud Foundry environment with your SCP credentials by entering the following command:
+
+```
+cf login
+```
+
+To deploy your application to the Cloud Foundry environment, enter the following command:
 
 ```
 cf push
 ```
+
 The application will now be deployed to the SCP Cloud Foundry environment.
 
 #### Step 8: Check your deployed application
