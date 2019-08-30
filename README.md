@@ -3,6 +3,9 @@
 ![Chatbot simple response result]()
 
 ## Webhook
+Make sure you have all prerequisites set up before starting with this assignment. So before starting, you should have already succesfully deployed the "hello world" app to the SCP Cloud Foundry environment. The prerequisites can be found here:
+
+https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/772b45ce6c46492b908d4c985add932a.html
 
 #### Step 1: Create a folder
 Create a new folder for your webhook application
@@ -13,6 +16,7 @@ Open a command prompt window and navigate to your webhook application folder. En
 ```
 npm init
 ```
+
 You will be prompted to answer a few questions. Enter the following:
 
 ```
@@ -27,6 +31,7 @@ author: <ENTER>
 license: (ISC) <ENTER>
 Is this OK? (yes) <ENTER>
 ```
+
 This will create a package.json file in the folder.
 
 #### Step 3: Extend package.json
