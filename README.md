@@ -247,25 +247,27 @@ SAP Conversational AI can recognize the sentiment of a message. In this assignme
 #### Step 1: Log in
 Go to https://cai.tools.sap/ and log in to your account. Now select the bot you have created.
 
-#### Step 2: Add new message group
-Go to the Build tab and select the Actions tab. Choose ADD A NEW MESSAGE GROUP and select CALL WEBHOOK. Enter the application URL followed by:
+#### Step 2: Call the webhook
+Drill down into the @createbp intent. Go to the Build tab and drill down into the skill you created in the first assignment. Now go to the ACTIONS tab and add another message group by pressing the ADD A NEW MESSAGE GROUP button. Now select the CALL WEBHOOK option.
+
+Enter the complete application url in the input box followed by:
 
 ```
 /postCreateBusinessPartner
 ```
 
-Add the following IF statement: 
+Add the following if statement to the message group:
 
 ```
-IF _sentiment is positive OR _sentiment is very positive.
+IF _sentiment is positive OR _sentiment is very positive
 ```
 
 ![Add new message group](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/BusinessPartnerRegistrationOnS4HANA1.png)
 
 #### Step 3: Test it
 Test your chatbot by pressing the CHAT WITH YOUR BOT button.
-- Type the expression that you entered and look at the bot response
-- Now type your first and last name
+- Type the expression "Register as business partner"
+- Now type your first and last name (use capitals)
 - Now type your postal code together with your house number in the correct format
 - Now select Yes
 
