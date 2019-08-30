@@ -244,7 +244,10 @@ cf push
 ## SAP Conversational AI
 SAP Conversational AI can recognize the sentiment of a message. In this assignment the chatbot should respond on the message 'yes' and it can recognize the sentiment in this to be 'positive' or 'very positive'. This will be the condition for the new message group we are going to create.
 
-#### Step 1: Add new message group
+#### Step 1: Log in
+Go to https://cai.tools.sap/ and log in to your account. Now select the bot you have created.
+
+#### Step 2: Add new message group
 Go to the Build tab and select the Actions tab. Choose ADD A NEW MESSAGE GROUP and select CALL WEBHOOK. Enter the application URL followed by:
 
 ```
@@ -259,7 +262,7 @@ IF _sentiment is positive OR _sentiment is very positive.
 
 ![Add new message group](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/BusinessPartnerRegistrationOnS4HANA1.png)
 
-#### Step 2: Test it
+#### Step 3: Test it
 Test your chatbot by pressing the CHAT WITH YOUR BOT button.
 - Type the expression that you entered and look at the bot response
 - Now type your first and last name
