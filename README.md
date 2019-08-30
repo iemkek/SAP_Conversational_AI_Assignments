@@ -228,8 +228,14 @@ var server = app.listen(PORT, function () {
 });
 ```
 
-#### Step 2: Push the updated project to SCP Cloud Foundry
-In the command prompt, use the following command (make sure you are in the main app directory) to push your changes to the SCP Cloud Foundry environment:
+#### Step 2: Push the application to Cloud Foundry
+In the command prompt, navigate to the webhook application folder and login to the Cloud Foundry environment with your SCP credentials by entering the following command:
+
+```
+cf login
+```
+
+To deploy your application to the Cloud Foundry environment, enter the following command:
 
 ```
 cf push
@@ -239,9 +245,17 @@ cf push
 SAP Conversational AI can recognize the sentiment of a message. In this assignment the chatbot should respond on the message 'yes' and it can recognize the sentiment in this to be 'positive' or 'very positive'. This will be the condition for the new message group we are going to create.
 
 #### Step 1: Add new message group
-Go to the Build tab and select the Actions tab. Choose ADD A NEW MESSAGE GROUP and select CALL WEBHOOK. Enter the application URL followed by '/postCreateBusinessPartner'.
+Go to the Build tab and select the Actions tab. Choose ADD A NEW MESSAGE GROUP and select CALL WEBHOOK. Enter the application URL followed by:
 
-Add the following IF statement: IF _sentiment positive OR _sentiment very positive.
+```
+/postCreateBusinessPartner
+```
+
+Add the following IF statement: 
+
+```
+IF _sentiment positive OR _sentiment very positive.
+```
 
 ![Add new message group](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/BusinessPartnerRegistrationOnS4HANA1.png)
 
