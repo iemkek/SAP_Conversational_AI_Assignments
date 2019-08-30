@@ -9,9 +9,45 @@ At the end of this exercise we want to achieve the following functionality:
 To perform the address lookup, an additional function is needed in the webhook.js file. This function will call a simple third-party service that takes a postal code in the url and returns the corresponsing street and city. The result can then be saved using the chatbot memory functionality so it can be used at a later stage.
 
 #### Step 1: Add the address lookup function to the webhook.js file
-Add the following code to the webhook.js file:
+Open the webhook.js file in your text/code editor and add the "postAddressLookup" function so it looks similar to this:
 
 ```javascript
+'use strict';
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const app = express();
+app.use(bodyParser.json());
+
+app.post('/postFullName', (req, res) => {
+	console.log(req.body.nlp.entities);
+	var sFullName = req.body.nlp.entities.person[0].fullname;
+	console.log(sFullName);
+	var aResults = sFullName.split(" ");
+	var sFirstName = aResults[0];
+	var sLastName = aResults[1];
+	console.log(sFirstName);
+	console.log(sLastName);
+	
+	// Send back response to chatbot
+	res.send({
+		replies: [
+					{ type: 'text',
+					  content: 'Thanks ' + sFirstName + '. Now please give me your postal code and house number.' }
+				 ],
+				 conversation: {
+					memory: {
+						user: { 
+							firstName: sFirstName,
+							lastName: sLastName
+						}
+					}
+				 }
+	})
+	
+});
+
+const axios = require('axios');
 app.post('/postAddressLookup', (req, res) => {
 	var sEntityName = 'postcode-housenumber';
 	var sPostalCodeHouseNumber = req.body.nlp.entities[sEntityName][0].raw;
@@ -80,6 +116,17 @@ app.post('/postAddressLookup', (req, res) => {
 		console.log(error);
 	  });
 	
+});
+
+// Set up webserver so we can receive HTTP requests from chatbot
+const PORT = process.env.PORT || 8088;
+var server = app.listen(PORT, function () {
+
+    const host = server.address().address;
+    const port = server.address().port;
+
+    console.log('Webhook app listening at http://' + host + ':' + port);
+
 });
 ```
 
