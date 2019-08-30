@@ -180,17 +180,25 @@ Do the same for the second expression.
 ![Recognizing the entity in the expression](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookup4.png)
 
 #### Step 5: Add new message group
-Go to the Build tab and select the Actions tab. Choose ADD A NEW MESSAGE GROUP and select CALL WEBHOOK. Enter the application URL followed by '/postAddressLookup'.
+Go to the Build tab and select the Actions tab. Choose ADD A NEW MESSAGE GROUP and select CALL WEBHOOK. Enter the application URL followed by:
 
-Add the following IF statement: IF #postcode-housenumber is-present.
+```
+/postAddressLookup
+```
+
+Add the following IF statement: 
+
+```
+IF #postcode-housenumber is-present.
+```
 
 ![Add new message group](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookup5.png)
 
 #### Step 6: Test it
 Test your chatbot by pressing the CHAT WITH YOUR BOT button.
-- Type the expression that you entered and look at the bot response
-- Now type your first and last name
-- Now type your postal code together with your house number in the correct format
+- Type the expression "Register as business partner"
+- Now type your first and last name (make sure you use capitals)
+- Now type your postal code together with your house number in the correct format (1234 AA 1)
 
 ![Address lookup result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookupTest.png)
 
