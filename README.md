@@ -3,7 +3,7 @@
 ![Chatbot simple response result]()
 
 ## Webhook
-Make sure you have all prerequisites set up before starting with this assignment. So before starting, you should have already succesfully deployed the "hello world" app to the SCP Cloud Foundry environment. The prerequisites tutorial can be found [here](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/772b45ce6c46492b908d4c985add932a.html).
+Make sure you have all prerequisites set up before starting with this assignment. So before starting, you should have already succesfully deployed the "hello world" app from the prerequisites tutorial to the SCP Cloud Foundry environment. The prerequisites tutorial can be found [here](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/772b45ce6c46492b908d4c985add932a.html).
 
 #### Step 1: Create a folder
 Create a new folder for your webhook application
