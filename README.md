@@ -141,7 +141,7 @@ Look for your deployed and started application on the SCP Cloud Foundry environm
 
 https://webhookrecast.cfapps.eu10.hana.ondemand.com
 
-You can find this url by logging into your SCP trial account and navigating to the Cloud Foundry environment via the tile. Then go to your trail subbaccount. In the left menu click 'Spaces', and click your space, for and find your application in the list. Click it to see the details and find your application URL. Right click the url and use "Copy link address" to capture the entire URL.
+You can find this url by logging into your [SCP trial account](http://account.hanatrial.ondemand.com) and navigating to the Cloud Foundry environment via the Cloud Foundry tile. Then go to your trail subbaccount. In the left menu click 'Spaces', and click your space, for and find your application in the list. Click it to see the details and find your application URL. Right click the url and use "Copy link address" to capture the entire URL.
 
 You need this url in the next step.
 
