@@ -139,13 +139,18 @@ npm install axios
 
 This will download and add the dependent axios library for the application to the webhook application folder and to the package.json file.
 
-#### Step 3: Push the updated project to SCP Cloud Foundry
-In the command prompt, navigate to the webhook application folder and enter the following command to push your changes to the SCP Cloud Foundry environment (make sure you are still logged in to the Cloud Foundry environment as described [here](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/2_Chatbot_with_response_from_webhook/README.md#step-7-push-the-application-to-cloud-foundry) in assignment 1):
+#### Step 3: Push the application to Cloud Foundry
+In the command prompt, navigate to the webhook application folder and login to the Cloud Foundry environment with your SCP credentials by entering the following command:
+
+```
+cf login
+```
+
+To deploy your application to the Cloud Foundry environment, enter the following command:
 
 ```
 cf push
 ```
-
 
 ## SAP Conversational AI
 An additional entity is needed in the chatbot to store the postal code and house number input from the user. Before the chatbot will recognize the pattern of the postal code and house number, we need to train it by feeding it some more expressions. In these expressions we need to specify what is our entity. Only then will the chatbot recognize the postal code and house number pattern and pass it along correctly to a new message group. In this message group a call to the webhook needs to be performed to the corresponding webhook function.
