@@ -53,7 +53,7 @@ Open the package.json file in your favourite text/code editor (like [Notepad++](
 ```
 
 #### Step 4: The manifest file
-In your webhook application folder, create a file called manifest.yml and open it. Add the code you see below and change <UNIQUE_APPLICATION_NAME> with your own unique name.
+In your webhook application folder, create a file called manifest.yml and open it in a text/code editor. Add the code you see below and change <UNIQUE_APPLICATION_NAME> with your own unique name (Hint: use your first or last name to make it unique).
 
 ```yaml
 ---
@@ -64,19 +64,17 @@ applications:
 ```
 
 #### Step 5: The script file
-In your webhook application folder, create a file called webhook.js and open it. Add the code below to the file.
+In your webhook application folder, create a file called webhook.js and open it in a text/code editor. Add the code below to the file.
 
 ```javascript
 'use strict';
 const express = require('express');
 const bodyParser = require('body-parser');
-const storage = require('node-persist');
 
 const app = express();
-
 app.use(bodyParser.json());
 
-app.post('/postFullName', async (req, res) => {
+app.post('/postFullName', (req, res) => {
 	console.log(req.body.nlp.entities);
 	var sFullName = req.body.nlp.entities.person[0].fullname;
 	console.log(sFullName);
@@ -85,13 +83,6 @@ app.post('/postFullName', async (req, res) => {
 	var sLastName = aResults[1];
 	console.log(sFirstName);
 	console.log(sLastName);
-
-	// Store fullname for later use
-	await 
-  .init();
-	await storage.setItem('sFullName',sFullName);
-	await storage.setItem('sFirstName',sFirstName);
-	await storage.setItem('sLastName',sLastName);
 	
 	// Send back response to chatbot
 	res.send({
@@ -100,7 +91,12 @@ app.post('/postFullName', async (req, res) => {
 					  content: 'Thanks ' + sFirstName + '. Now please give me your postal code and house number.' }
 				 ],
 				 conversation: {
-					memory: {}
+					memory: {
+						user: { 
+							firstName: sFirstName,
+							lastName: sLastName
+						}
+					}
 				 }
 	})
 	
