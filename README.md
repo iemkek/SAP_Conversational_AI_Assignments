@@ -26,7 +26,7 @@ Name your intent: createbp
 ![Create intent](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponse2.png)
 
 #### Step 5: Add expressions to intent
-Drill down into the intent you just created by clicking the @createbp intenet. Now add an expression to your intent by typing the expression and pressing enter. If a user types this expression, the bot can recognize it and connect it to the corresponding intent.
+Drill down into the intent you just created by clicking the @createbp intent. Now add an expression to your intent by typing the expression and pressing enter. If a user types this expression when interacting with the bot, it can recognize the expression and connect it to the corresponding intent.
 
 Enter expression: Register as business partner
 
