@@ -8,7 +8,7 @@ At the end of this exercise we want to achieve the following functionality:
 To create a Business Partner on the S/4HANA system, an additional function is needed. This function will first fetch a CSRF token from the S/4HANA system, after which the actual create call will take place. We will send all the data that is collected in the chatbot memory in this call.
 
 #### Step 1: Add the create business partner function to the webhook.js file
-Add the following code to the webhook.js file:
+Open the webhook.js file in your text/code editor and add the "postCreateBusinessPartner" function so the file looks similar to this:
 
 ```javascript
 'use strict';
