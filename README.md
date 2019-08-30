@@ -145,6 +145,8 @@ You can find this url by logging into your [SCP trial account](http://account.ha
 
 You need this url in the next step.
 
+![Check your deployed application](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/webhookResponse1.png)
+
 ## SAP Conversational AI
 
 #### Step 1: Call the webhook
@@ -158,6 +160,8 @@ Add the following if statement to the message group:
 ```
 IF #person.fullname is-present
 ```
+
+![Call the webhook](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/webhookResponse2.png)
 
 #### Step 2: Test it
 Test your chatbot by pressing the CHAT WITH YOUR BOT button. Type the expression "Register as business partner". Now enter your first and last name (make sure you use capitals) and look at the bot response.
