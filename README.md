@@ -310,7 +310,7 @@ Add the following if statement to the message group:
 IF #number is-present
 ```
 
-![Add new message group](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/BusinessPartnerRegistrationOnS4HANA1.png)
+![Add new message group]()
 
 #### Step 3: Test it
 Test your chatbot by pressing the CHAT WITH YOUR BOT button.
