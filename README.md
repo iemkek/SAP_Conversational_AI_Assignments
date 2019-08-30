@@ -254,7 +254,7 @@ Go to the Build tab and select the Actions tab. Choose ADD A NEW MESSAGE GROUP a
 Add the following IF statement: 
 
 ```
-IF _sentiment positive OR _sentiment very positive.
+IF _sentiment is positive OR _sentiment is very positive.
 ```
 
 ![Add new message group](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/BusinessPartnerRegistrationOnS4HANA1.png)
