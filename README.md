@@ -155,31 +155,34 @@ cf push
 ## SAP Conversational AI
 An additional entity is needed in the chatbot to store the postal code and house number input from the user. Before the chatbot will recognize the pattern of the postal code and house number, we need to train it by feeding it some more expressions. In these expressions we need to specify what is our entity. Only then will the chatbot recognize the postal code and house number pattern and pass it along correctly to a new message group. In this message group a call to the webhook needs to be performed to the corresponding webhook function.
 
-#### Step 1: Create new entity
+#### Step 1: Log in
+Go to https://cai.tools.sap/ and log in to your account. Now select the bot you have created.
+
+#### Step 2: Create new entity
 Go to the Entities tab and press the CREATE button.
 
 ![Create new entity](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookup1.png)
 
-#### Step 2: Enter entity details
+#### Step 3: Enter entity details
 Enter the entity name 'postcode-housenumber' and choose the 'Free entity' option. Now press the CREATE button.
 
 ![Enter entity details](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookup2.png)
 
-#### Step 3: Add expressions for this entity
+#### Step 4: Add expressions for this entity
 Go to the @createbp intent and add two more expressions:
 - 1234 AA 1
 - 9999 XY 123
 
 ![Add expressions for this entity](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookup3.png)
 
-#### Step 4: Recognizing the entity in the expression
+#### Step 5: Recognizing the entity in the expression
 Select the text of the first newly added expression completely. Now select the entity 'postcode-housenumber'.
 
 Do the same for the second expression.
 
 ![Recognizing the entity in the expression](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookup4.png)
 
-#### Step 5: Add new message group
+#### Step 6: Add new message group
 Go to the Build tab and select the Actions tab. Choose ADD A NEW MESSAGE GROUP and select CALL WEBHOOK. Enter the application URL followed by:
 
 ```
@@ -194,7 +197,7 @@ IF #postcode-housenumber is-present.
 
 ![Add new message group](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookup5.png)
 
-#### Step 6: Test it
+#### Step 7: Test it
 Test your chatbot by pressing the CHAT WITH YOUR BOT button.
 - Type the expression "Register as business partner"
 - Now type your first and last name (make sure you use capitals)
