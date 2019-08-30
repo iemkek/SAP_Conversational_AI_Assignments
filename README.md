@@ -151,21 +151,27 @@ You need this url in the next step.
 
 ## SAP Conversational AI
 
-#### Step 1: Call the webhook
-Drill down into the skill you created in the first assignment. Now go to the ACTIONS tab and add another message group by pressing the ADD A NEW MESSAGE GROUP button. Now select the CALL WEBHOOK option.
+#### Step 1: Log in
+Go to https://cai.tools.sap/ and log in to your account.
+
+#### Step 2: Call the webhook
+Select the bot you have created. Now drill down into the @createbp intent. Go to the Build tab and drill down into the skill you created in the first assignment. Now go to the ACTIONS tab and add another message group by pressing the ADD A NEW MESSAGE GROUP button. Now select the CALL WEBHOOK option.
 
 Enter the complete application url in the input box followed by:
+
 ```
 /postFullName
 ```
+
 Add the following if statement to the message group:
+
 ```
 IF #person.fullname is-present
 ```
 
 ![Call the webhook](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/webhookResponse2.png)
 
-#### Step 2: Test it
+#### Step 3: Test it
 Test your chatbot by pressing the CHAT WITH YOUR BOT button. Type the expression "Register as business partner". Now enter your first and last name (make sure you use capitals) and look at the bot response.
 
 ![Test it](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/webhookResponseTest.png)
