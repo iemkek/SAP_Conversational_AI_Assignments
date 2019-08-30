@@ -33,13 +33,13 @@ Is this OK? (yes) <ENTER>
 This will create a package.json file in the folder.
 
 #### Step 3: Extend package.json
-Open the package.json file and add "engines" and "scripts" section so it looks similar to this:
+Open the package.json file in your favourite text/code editor (like [Notepad++](https://notepad-plus-plus.org/download/v7.7.1.html)) and add the "engines" and "scripts" sections so it looks similar to this:
 
 ```json
 {
   "name": "webhookrecast",
   "version": "1.0.0",
-  "description": "Webhook application",
+  "description": "",
   "main": "webhook.js",
   "author": "",
   "license": "ISC",
