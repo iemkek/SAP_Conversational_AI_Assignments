@@ -61,7 +61,7 @@ In the command prompt, navigate to the webhook application folder and enter the 
 npm install express body-parser
 ````
 
-This will download and add the dependent libraries for the application to the webhook application folder and to the package.json file.
+This will download and add the dependent express and body-parser libraries for the application to the webhook application folder and to the package.json file.
 
 #### Step 5: The manifest file
 In your webhook application folder, create a file called manifest.yml and open it in a text/code editor. Add the code you see below and change <UNIQUE_APPLICATION_NAME> with your own unique name (Hint: use your first or last name to make it unique).
