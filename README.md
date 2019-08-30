@@ -140,7 +140,7 @@ npm install axios
 This will download and add the dependent axios library for the application to the webhook application folder and to the package.json file.
 
 #### Step 3: Push the updated project to SCP Cloud Foundry
-In the command prompt, navigate to the webhook application folder and enter the following command to push your changes to the SCP Cloud Foundry environment (make sure you are still logged in to the Cloud Foundry environment as described [here]() in assignment 1):
+In the command prompt, navigate to the webhook application folder and enter the following command to push your changes to the SCP Cloud Foundry environment (make sure you are still logged in to the Cloud Foundry environment as described [here](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/2_Chatbot_with_response_from_webhook/README.md#step-7-push-the-application-to-cloud-foundry) in assignment 1):
 
 ```
 cf push
