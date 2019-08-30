@@ -1,4 +1,5 @@
 # Assignment 2 - Chatbot with a response from webhook
+In the first assignment, the chatbot is responding to the user's input with a fixed message. Most of the time however, a dynamic response is needed based on the specific user input and any actions that take place as a result of the input. This can be achieved with a webhook. A webhook is a simple script that can perform logical actions and return a dynamic response to the user.
 
 ![Chatbot simple response result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/webhookResponseTest.png)
 
