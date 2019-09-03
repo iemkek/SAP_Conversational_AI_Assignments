@@ -11,7 +11,7 @@ You should have already completed the prerequisites for these assignments. If yo
 #### Debugging the chatbot
 To give you an insight into what the chatbot is doing when you are testing it (by givings text inputs), you can use the debug functionality of the chatbot. To activate the debugging, press the debug button on the top of the CHAT WITH YOUR BOT message window.
 
-![Debugging the chatbot]()
+![Debugging the chatbot](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/chatbotDebug1.png)
 
 This screen will show you information regarding the skill that was triggered by your test input and what the response the skill was. In the above screenshot you can see that the createbp skill was triggered. The result of this skill was a message with content "Please give me your first and last name".
 
