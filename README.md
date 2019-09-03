@@ -13,7 +13,7 @@ To give you an insight into what the chatbot is doing when you are testing it (b
 
 ![Debugging the chatbot](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/chatbotDebug1.png)
 
-This screen will show you information regarding the skill that was triggered by your test input and what the response the skill was. In the above screenshot you can see that the createbp skill was triggered. The result of this skill was a message with content "Please give me your first and last name".
+This screen (right side) will show you information regarding the skill that was triggered by your test input and what the response the skill was. In the above screenshot you can see that the createbp skill was triggered. The result of this skill was a message with content "Please give me your first and last name".
 
 #### Debugging the webhook
 It can be pretty hard to debug a server side script. There are lengthy tutorials on how to do this ([this](https://blogs.sap.com/2019/08/02/cloudfoundryfun-7-connect-vs-code-to-deployed-cloud-applications) tutorial for example). An easy way to get some basic information from your script is to use the logging functionality of Cloud Foundry applications. Use the following code in your script to check any variables in your script on a certain point:
