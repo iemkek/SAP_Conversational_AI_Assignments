@@ -1,7 +1,7 @@
 # Innov8ion SAP Conversational AI meeting
 All assignments for the Innov8ion SAP Conversational AI meeting are covered in this Github repository. Every branch is one assignment. You can navigate to the next assignment by clicking the link at the end of each assignment.
 
-Please read through this page and then continue to the first assignment to get started.
+Please read through this page for some information regarding prerequisites and debugging possibilities. Then continue to the first assignment to get started.
 
 [Assignment 1](https://github.com/iemkek/SAP_Conversational_AI_Assignments/tree/1_Chatbot_with_simple_response)
 
