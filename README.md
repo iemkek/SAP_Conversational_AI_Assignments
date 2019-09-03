@@ -38,3 +38,5 @@ After the script has run, use the following command in the command prompt to sho
 cf logs <APPLICATION_NAME> --recent
 ```
 
+# Continue to the first assignment
+[Assignment 1](https://github.com/iemkek/SAP_Conversational_AI_Assignments/tree/1_Chatbot_with_simple_response)
