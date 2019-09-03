@@ -1,6 +1,7 @@
 # Assignment 1 - Chatbot with a simple response
 In this first assignment we will be setting up the chatbot and make it reply to a user input.
 
+At the end of this exercise we want to achieve the following functionality:
 ![Chatbot simple response result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponseTest.png)
 
 ## SAP Conversational AI
