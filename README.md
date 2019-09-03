@@ -1,5 +1,5 @@
 # Innov8ion SAP Conversational AI meeting
-All assignments for the Innov8ion SAP Conversational AI meeting are covered in this Github repository. Every branch is one assignment. You can navigate to the next assignment by clicking the link at the end of each assignment.
+All assignments for the Innov8ion SAP Conversational AI meeting are covered in this Github repository. Every branch is one assignment. You can navigate to the next assignment by clicking the link at the end of each assignment or by choosing the corresponding branch.
 
 Please read through this page for some information regarding prerequisites and debugging possibilities. Then continue to the first assignment to get started.
 
