@@ -317,7 +317,9 @@ IF #number is-present
 
 #### Step 3: Test it
 Test your chatbot by pressing the CHAT WITH YOUR BOT button.
-- Type the expression "Find business partner <YOUR_BUSINESS_PARTNER_NUMBER>
+- Type the expression "Find business partner <YOUR_BUSINESS_PARTNER_NUMBER>"
+
+If you do not get the correct results, try finding out what went wrong by using the tips and tricks on the master branch page [here](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/README.md#debugging-the-chatbot).
 
 ![Business Partner lookup result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/BusinessPartnerLookupTest.png)
 
