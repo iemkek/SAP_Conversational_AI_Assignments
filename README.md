@@ -1,4 +1,5 @@
 # Assignment 5 - Business Partner lookup on S4/HANA
+So now we can create a business partner through the chatbot. To check the business partner number you have received, we will create a business partner lookup functionality.
 
 At the end of this exercise we want to achieve the following functionality:
 ![Business Partner lookup result]()
