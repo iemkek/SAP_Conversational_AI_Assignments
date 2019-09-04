@@ -179,6 +179,8 @@ IF #person.fullname is-present
 #### Step 3: Test it
 Test your chatbot by pressing the CHAT WITH YOUR BOT button. Type the expression "Register as business partner". Now enter your first and last name (make sure you use capitals) and look at the bot response.
 
+If you do not get the correct results, try finding out what went wrong by using the tips and tricks on the master branch page [here](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/README.md#debugging-the-chatbot).
+
 ![Test it](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/webhookResponseTest.png)
 
 # Continue to the next assignment
