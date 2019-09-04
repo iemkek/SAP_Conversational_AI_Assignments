@@ -183,13 +183,17 @@ Do the same for the second expression.
 ![Recognizing the entity in the expression](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookup4.png)
 
 #### Step 6: Add new message group
-Go to the Build tab and select the Actions tab. Choose ADD A NEW MESSAGE GROUP and select CALL WEBHOOK. Enter the application URL followed by:
+Go to the Build tab and select the Actions tab. Choose ADD A NEW MESSAGE GROUP and select CALL WEBHOOK.
+
+![Call webhook](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/BusinessPartnerLookup2.png)
+
+Enter the complete application url in the input box followed by:
 
 ```
 /postAddressLookup
 ```
 
-Add the following IF statement: 
+Add the following IF statement to the message group: 
 
 ```
 IF #postcode-housenumber is-present.
