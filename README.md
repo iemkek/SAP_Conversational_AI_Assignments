@@ -157,6 +157,8 @@ Go to https://cai.tools.sap/ and log in to your account. Now select the bot you 
 #### Step 2: Call the webhook
 Drill down into the @createbp intent. Go to the Build tab and drill down into the skill you created in the first assignment. Now go to the ACTIONS tab and add another message group by pressing the ADD A NEW MESSAGE GROUP button. Now select the CALL WEBHOOK option.
 
+![Call webhook](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/BusinessPartnerLookup2.png)
+
 Enter the complete application url in the input box followed by:
 
 ```
