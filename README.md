@@ -2,7 +2,7 @@
 So now we can create a business partner through the chatbot. To check the business partner number you have received, we will create a business partner lookup functionality.
 
 At the end of this exercise we want to achieve the following functionality:
-![Business Partner lookup result]()
+![Business Partner lookup result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/BusinessPartnerLookupTest.png)
 
 ## Webhook
 
@@ -319,7 +319,7 @@ IF #number is-present
 Test your chatbot by pressing the CHAT WITH YOUR BOT button.
 - Type the expression "Find business partner <YOUR_BUSINESS_PARTNER_NUMBER>
 
-![Business Partner registration result]()
+![Business Partner lookup result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/BusinessPartnerLookupTest.png)
 
 # Thank you for participating in these assignments
 Extra assignment 1 - Channels
