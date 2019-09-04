@@ -1,4 +1,4 @@
-# Extra Assignment - Chatbot channels
+# Assignment 6 - Chatbot channels
 
 At the end of this exercise we want to achieve the following functionality:
 ![Chatbot channels]()
