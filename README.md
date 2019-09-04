@@ -207,6 +207,8 @@ Test your chatbot by pressing the CHAT WITH YOUR BOT button.
 - Now type your first and last name (make sure you use capitals)
 - Now type your postal code together with your house number in the correct format (1234 AA 1)
 
+If you do not get the correct results, try finding out what went wrong by using the tips and tricks on the master branch page [here](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/README.md#debugging-the-chatbot).
+
 ![Address lookup result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/addressLookupTest.png)
 
 ## Continue to the next assignment
