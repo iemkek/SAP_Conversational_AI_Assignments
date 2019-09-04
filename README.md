@@ -322,4 +322,4 @@ Test your chatbot by pressing the CHAT WITH YOUR BOT button.
 ![Business Partner registration result]()
 
 # Thank you for participating in these assignments
-No more assignments left.
+Extra assignment 1 - Channels
