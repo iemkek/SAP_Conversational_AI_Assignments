@@ -321,5 +321,5 @@ Test your chatbot by pressing the CHAT WITH YOUR BOT button.
 
 ![Business Partner lookup result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/BusinessPartnerLookupTest.png)
 
-# Thank you for participating in these assignments
-Assigment 6
+# Continue to the next assignment
+[Assignment 6 - Chatbot channels](https://github.com/iemkek/SAP_Conversational_AI_Assignments/tree/6_Chatbot_channels)
