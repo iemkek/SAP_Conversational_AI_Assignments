@@ -58,7 +58,8 @@ Please give me your first and last name
 ![Define actions](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponse6.png)
 
 #### Step 9: Test it
-Test your chatbot by pressing the CHAT WITH YOUR BOT button (bottom right corner of the screen). Type the expression "Register as business partner" and look at the bot response.
+Test your chatbot by pressing the CHAT WITH YOUR BOT button (bottom right corner of the screen). 
+- Type the expression "Register as business partner"
 
 ![Chatbot simple response result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponseTest.png)
 
