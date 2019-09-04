@@ -1,7 +1,9 @@
 # Innov8ion SAP Conversational AI meeting
 All assignments for the Innov8ion SAP Conversational AI meeting are covered in this Github repository. Every branch is one assignment. You can navigate to the next assignment by clicking the link at the end of each assignment or by choosing the corresponding branch.
 
-Please read through this page for some information regarding prerequisites and debugging possibilities. Then continue to the first assignment to get started.
+The scenario we will be developing is about creating a business partner on an S/4HANA system. We will start by setting up a simple chatbot that will respond to a user input and work our way to the actual business partner registration.
+
+Please read through this page for some information regarding prerequisites and debugging possibilities. Then continue to the first assignment to get started. If you get stuck during the assignments, try to find out what is going wrong by using the tips and tricks on this page. 
 
 [Assignment 1](https://github.com/iemkek/SAP_Conversational_AI_Assignments/tree/1_Chatbot_with_simple_response)
 
