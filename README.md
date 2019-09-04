@@ -269,9 +269,11 @@ IF _sentiment is positive OR _sentiment is very positive
 #### Step 3: Test it
 Test your chatbot by pressing the CHAT WITH YOUR BOT button.
 - Type the expression "Register as business partner"
-- Now type your first and last name (use capitals)
-- Now type your postal code together with your house number in the correct format
-- Now select Yes
+- Now type your first and last name (make sure you use capitals)
+- Now type your postal code together with your house number in the correct format (1234 AA 1)
+- Now select yes
+
+If you do not get the correct results, try finding out what went wrong by using the tips and tricks on the master branch page [here](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/README.md#debugging-the-chatbot).
 
 ![Business Partner registration result](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/BusinessPartnerRegistrationOnS4HANATest.png)
 
