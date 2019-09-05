@@ -57,11 +57,13 @@ Go to the Actions tab. Press ADD NEW MESSAGE GROUP and then select SEND MESSAGE.
 Please give me your first and last name
 ```
 
-Add the following IF statement:
+Add the following IF statement to the message group:
 
 ```
-IF #person is-present
+IF #job is-present
 ```
+
+The #job entity is standard predefined entity. In the expression "Register as business partner", the chatbot can automatically determine that "business partner" is a #job.
 
 ![Define actions](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponse6.png)
 
