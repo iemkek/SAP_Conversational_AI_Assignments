@@ -8,7 +8,7 @@ Please read through this page for some information regarding prerequisites and d
 [Assignment 1](https://github.com/iemkek/SAP_Conversational_AI_Assignments/tree/1_Chatbot_with_simple_response)
 
 #### Prerequisites
-You should have already completed the prerequisites for these assignments. If you have not done so already, you can find them [here](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/772b45ce6c46492b908d4c985add932a.html). It is a short SAP tutorial. After you follow the prerequisites-tutorial you are ready to go! 
+You should have already completed the prerequisites for these assignments. If you have not done so already, you can find them [here](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/772b45ce6c46492b908d4c985add932a.html). If you complete the complete turorial, you are ready to go. It is a short SAP tutorial. 
 
 #### Debugging the chatbot
 There are two debug options in the SAP Conversational AI tool. You can access these options by pressing the TEST and CHAT WITH YOUR BOT buttons. These buttons are always visible on every page when you have created a bot.
