@@ -174,6 +174,8 @@ Add the following if statement to the message group:
 IF #person.fullname is-present
 ```
 
+The #person entity is standard predefined entity. If the user types his first and last name, the chatbot can automatically determine that this is a #person.
+
 ![Call the webhook](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/webhookResponse2.png)
 
 #### Step 3: Test it
