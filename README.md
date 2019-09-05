@@ -40,15 +40,13 @@ Go to the Build tab and press the Create skill button. A skill can be executed a
 ![Create skill](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponse4.png)
 
 #### Step 7: Skill trigger
-Drill down into the skill you just created by clicking the skill in the canvas. Now go to the Triggers tab and enter the following trigger:
+This skill should only be executed when the user refers to the createbp intent. Triggers can be added to a skill. To do this, drill down into the skill you just created by clicking the skill in the canvas. Now go to the Triggers tab and enter the following trigger:
 
 ```
 If @createbp is-present
 ```
 
 ![Skill trigger](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponse5.png)
-
-This will connect the createbp skill with the createbp intent.
 
 #### Step 8: Define actions
 Go to the Actions tab. Press ADD NEW MESSAGE GROUP and then select SEND MESSAGE. In the message input field, enter:
