@@ -48,6 +48,8 @@ If @createbp is-present
 
 ![Skill trigger](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponse5.png)
 
+This will connect the createbp skill with the createbp intent.
+
 #### Step 8: Define actions
 Go to the Actions tab. Press ADD NEW MESSAGE GROUP and then select SEND MESSAGE. In the message input field, enter:
 
