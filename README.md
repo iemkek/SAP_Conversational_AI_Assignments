@@ -57,6 +57,12 @@ Go to the Actions tab. Press ADD NEW MESSAGE GROUP and then select SEND MESSAGE.
 Please give me your first and last name
 ```
 
+Add the following IF statement:
+
+```
+IF #person is-present
+```
+
 ![Define actions](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponse6.png)
 
 #### Step 9: Test it
