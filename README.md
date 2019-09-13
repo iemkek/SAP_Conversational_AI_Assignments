@@ -73,6 +73,9 @@ IF #job is-present
 
 The #job entity is standard predefined entity. In the expression "Register as business partner", the chatbot can automatically determine that "business partner" is a #job.
 
+> **Entity** - 
+> An entity is a keyword that is extracted from an expression. SAP Conversational AI automatically detect 28 different entities such as Datetime, Location, Person, and so on. They call them gold entities. However, you’re not limited to these gold entities. You can also tag your own custom entities to detect keywords depending on your bot’s context.
+
 ![Define actions](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponse6.png)
 
 #### Step 9: Test it
