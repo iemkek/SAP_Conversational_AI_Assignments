@@ -39,8 +39,31 @@ Remember how the webhook uses a “card” response containing a picture and a �
 #### Step 1: Change the webhook
 The first response that needs to be changed is the “Get address success”. Replace the following code:
 
+#### Step 2: Push the application to Cloud Foundry
+In the command prompt, navigate to the webhook application folder and login to the Cloud Foundry environment with your SCP credentials by entering the following command:
 
+```
+cf login
+```
 
+To deploy your application to the Cloud Foundry environment, enter the following command:
+
+```
+cf push
+```
+
+## Amazon Alexa
+It’s time to chat! 
+Go to https://developer.amazon.com/alexa/console/ask and login with your credentials. You should find the skill that has been deployed by SAP conversational AI. Click the skill name.
+![Alexa Skills]()
+
+On the next page, open the “Test” tab. Set the “Skill testing is enabled in:” drop down to “Development”, and we’re all set to start the chat!
+![Alexa developer console]()
+
+To start chatting with Amazon Alexa click and hold the microphone icon. “Ask <your invocation name> to register business partner”
+![]()
+ 
+If Alexa response with “Please give me your first and last name” you are talking to your chatbot in SAP conversational AI! Continue on chatting and see if you can register yourself through Amazon Alexa.
 
 # No more assignments.
 Thank you for participating in this session!
