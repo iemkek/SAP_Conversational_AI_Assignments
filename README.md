@@ -27,6 +27,7 @@ Once the connection is established, it’s time to choose an invocation name. Th
 ![Create Channel](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/ChatbotChannels3.png)
 
 Leave the fields “Vendor” and “Locales” as suggested and click “Deploy skill to Amazon Alexa” 
+
 ![Deploy skill](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/ChatbotChannels4.png)
 
 SAP CAI has now created a skill on Amazon Alexa. But before we start talking to our chatbot we will need to make some adjustments to the reply’s of the webhook.
