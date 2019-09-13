@@ -29,9 +29,10 @@ Name your intent: createbp
 
 ```
 Intent
-
-An intent is a box of expressions that mean the same thing but are constructed in different ways. Intents are the heart of your bot’s understanding. Each one of your intents represents an idea your bot is able to understand.
 ```
+> An intent is a box of expressions that mean the same thing but are constructed in different ways. 
+Intents are the heart of your bot’s understanding. Each one of your intents represents an idea your bot is able to understand.
+
 
 #### Step 5: Add expressions to intent
 Drill down into the intent you just created by clicking the @createbp intent. Now add an expression to your intent by typing the expression and pressing enter. If a user types this expression when interacting with the bot, it can recognize the expression and connect it to the corresponding intent.
