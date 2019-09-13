@@ -21,17 +21,15 @@ Fill atleast the following details:
 - End user (Non-vulnerable)
 
 #### Step 4: Create intent
+> **Intent** - 
+> An intent is a box of expressions that mean the same thing but are constructed in different ways. 
+Intents are the heart of your bot’s understanding. Each one of your intents represents an idea your bot is able to understand.
+
 Now that the bot is created, the first intent can also be created. An intent can be recognized by the bot when a user sends it a message and is the heart of the bot's understanding. Once an intent is recognized, the bot can perform one or more actions based this.
 
 Name your intent: createbp
 
 ![Create intent](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponse2.png)
-
-
-> **Intent**
-> An intent is a box of expressions that mean the same thing but are constructed in different ways. 
-Intents are the heart of your bot’s understanding. Each one of your intents represents an idea your bot is able to understand.
-
 
 #### Step 5: Add expressions to intent
 Drill down into the intent you just created by clicking the @createbp intent. Now add an expression to your intent by typing the expression and pressing enter. If a user types this expression when interacting with the bot, it can recognize the expression and connect it to the corresponding intent.
