@@ -27,9 +27,8 @@ Name your intent: createbp
 
 ![Create intent](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponse2.png)
 
-```
-Intent
-```
+
+> **Intent**
 > An intent is a box of expressions that mean the same thing but are constructed in different ways. 
 Intents are the heart of your bot’s understanding. Each one of your intents represents an idea your bot is able to understand.
 
