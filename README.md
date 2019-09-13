@@ -12,9 +12,6 @@ Make sure you have all prerequisites set up before starting with this assignment
 
 During this assignment we will be using the chatbot memory to store the important values given to us by the user.
 
-> **Conversation memory** -
-> Each conversation with a unique user has a memory object from the beginning to the end of the conversation. This memory persists during the entire conversation; you can update it at any time or clear it whenever you want.
-
 #### Step 1: Create a folder
 Create a new folder for your webhook application
 
