@@ -10,6 +10,8 @@ To create a Business Partner on the S/4HANA system, an additional function is ne
 #### Step 1: Add the create business partner function to the webhook.js file
 Open the webhook.js file in your text/code editor and add the "postCreateBusinessPartner" function so the file looks similar to this:
 
+**Make sure to replace the XXXXXX username and XXXXXX password in this script by the credentials supplied to you in the session**
+
 ```javascript
 'use strict';
 const express = require('express');
