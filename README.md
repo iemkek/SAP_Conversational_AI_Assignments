@@ -39,6 +39,40 @@ Remember how the webhook uses a “card” response containing a picture and a �
 #### Step 1: Change the webhook
 The first response that needs to be changed is the “Get address success”. Replace the following code:
 
+```json
+replies: [
+		{ type: 'buttons',
+		  content: {
+			  "title": sText,
+			  "buttons": [
+				{
+				  "title": "Yes",
+				  "type": "BUTTON_TYPE",
+				  "value": "YES"
+				},
+				{
+				  "title": "No",
+				  "type": "BUTTON_TYPE",
+				  "value": "NO"
+				}
+			  ]
+			}}
+	 ]
+```
+
+With:
+
+```javascript
+replies: [
+		{ type: 'text',
+		  content: sText }
+	 ],
+```
+
+The second response that needs to be changed is the “Post BP success”. Replace the following code:
+
+
+
 #### Step 2: Push the application to Cloud Foundry
 In the command prompt, navigate to the webhook application folder and login to the Cloud Foundry environment with your SCP credentials by entering the following command:
 
