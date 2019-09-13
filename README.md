@@ -71,7 +71,33 @@ replies: [
 
 The second response that needs to be changed is the “Post BP success”. Replace the following code:
 
+```javascript
+replies: [
+		{ type: 'text',
+		  delay: 2,
+		  content: 'You are now registered as a business partner.' },
+		{
+		  type: 'card',
+		  content: {
+			title: sFirstName + ' ' + sLastName + ' - ' + sBusinessPartnerNr,
+			subtitle: sStreet + ' ' + sHouseNumber + ', ' + sPostalCode + ' ' + sCity,
+			imageUrl: 'https://media.licdn.com/dms/image/C4E0BAQH9lwnKDWtBew/company-logo_400_400/0?e=1572480000&v=beta&t=wYK8bopvEmZQdhFnLnwq9okBQROfCqkVGA95UCFmlmA',
+			buttons: []
+		  }
+		}	
+	 ]
 
+```
+With:
+
+```javascript
+replies: [
+		{ type: 'text',
+		  delay: 2,
+		  content: 'You are now registered as business partner ' + sBusinessPartnerNr + '.' }
+	 ],
+
+```
 
 #### Step 2: Push the application to Cloud Foundry
 In the command prompt, navigate to the webhook application folder and login to the Cloud Foundry environment with your SCP credentials by entering the following command:
