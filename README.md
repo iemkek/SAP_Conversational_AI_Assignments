@@ -60,7 +60,7 @@ Go to https://developer.amazon.com/alexa/console/ask and login with your credent
 On the next page, open the “Test” tab. Set the “Skill testing is enabled in:” drop down to “Development”, and we’re all set to start the chat!
 ![Alexa developer console](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/ChatbotChannels6.png)
 
-To start chatting with Amazon Alexa click and hold the microphone icon. “Ask *your invocation name* to register business partner”
+To start chatting with Amazon Alexa click and hold the microphone icon. “Ask **[your invocation name]** to register business partner”
 ![Chat!](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/ChatbotChannels7.png)
  
 If Alexa response with “Please give me your first and last name” you are talking to your chatbot in SAP conversational AI! Continue on chatting and see if you can register yourself through Amazon Alexa.
