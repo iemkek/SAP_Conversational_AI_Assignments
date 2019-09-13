@@ -9,11 +9,12 @@ At the end of this exercise we want to achieve the following functionality:
 To perform the address lookup, an additional function is needed in the webhook.js file. This function will call a simple third-party service that takes a postal code in the url and returns the corresponsing street and city. 
 
 > **postcode-api.nl** -
-> This is a free dutch API.
+> This is a free dutch API. It can be upsed to perform simple address lookups based on a postal code. Try it out [here](http://postcode-api.nl).
 
 The result can then be saved using the chatbot memory functionality so it can be used at a later stage.
 
-
+> **Conversation memory** -
+> Each conversation with a unique user has a memory object from the beginning to the end of the conversation. This memory persists during the entire conversation; you can update it at any time or clear it whenever you want.
 
 #### Step 1: Add the address lookup function to the webhook.js file
 Open the webhook.js file in your text/code editor and add the "postAddressLookup" function so the file looks similar to this:
