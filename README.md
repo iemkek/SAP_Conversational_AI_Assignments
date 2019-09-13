@@ -244,6 +244,9 @@ cf push
 ## SAP Conversational AI
 SAP Conversational AI can recognize the sentiment of a message. In this assignment the chatbot should respond on the message 'yes' and it can recognize the sentiment in this to be 'positive' or 'very positive'. This will be the condition for the new message group we are going to create.
 
+> **Sentiment** - 
+> Sentiment detection is an important part of analyzing an user’s input. This allows you to treat different levels of positive, and negative inputs.
+
 #### Step 1: Log in
 Go to https://cai.tools.sap/ and log in to your account. Now select the bot you have created.
 
