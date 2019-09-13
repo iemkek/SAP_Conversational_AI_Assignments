@@ -1,9 +1,7 @@
 # Assignment 6 - Chatbot Channels
+SAP Conversational AI allows you to make your chatbot available through a lot of different channels. By choosing the correct channels you can connect with your target audience. It is possible to integrate the chatbot in one of your own web applications, but also to connect it to existing services like Facebook (chat) or Amazon Alexa (voice). 
 
 Let’s talk to our chatbot by leveraging the Amazon Alexa channel. 
-
-At the end of this exercise we want to achieve the following functionality:
-![Chatbot channels]()
 
 ## Amazon developer account
 You will need to have an Amazon developer account to be able to access the Alexa service.
