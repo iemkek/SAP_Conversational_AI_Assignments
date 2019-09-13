@@ -39,7 +39,7 @@ Remember how the webhook uses a “card” response containing a picture and a �
 #### Step 1: Change the webhook
 The first response that needs to be changed is the “Get address success”. Replace the following code:
 
-```json
+```javascript
 replies: [
 		{ type: 'buttons',
 		  content: {
