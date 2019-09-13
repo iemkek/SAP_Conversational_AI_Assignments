@@ -19,17 +19,17 @@ Go to https://cai.tools.sap/ and log in to your account. Now select the bot you 
 
 #### Step 2: Connect
 Select the Connect tab and open the Amazon Alexa line.
-![Select Channel]()
+![Select Channel](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/ChatbotChannels1.png)
 
 Click “Login with Amazon” and provide your Amazon developer credentials. 
-![Login to Amazon]()
+![Login to Amazon](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/ChatbotChannels2.png)
 
 #### Step 3: Create the channel
 Once the connection is established, it’s time to choose an invocation name. This is the “magic” word that will let Alexa know that it needs to switch to SAP conversational AI. Feel free to personalize these two fields. Once you’re done click “Create Channel”.
-![Create Channel]()
+![Create Channel](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/ChatbotChannels3.png)
 
 Leave the fields “Vendor” and “Locales” as suggested and click “Deploy skill to Amazon Alexa” 
-![Deploy skill]()
+![Deploy skill](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/ChatbotChannels4.png)
 
 SAP CAI has now created a skill on Amazon Alexa. But before we start talking to our chatbot we will need to make some adjustments to the reply’s of the webhook.
 
@@ -55,13 +55,13 @@ cf push
 ## Amazon Alexa
 It’s time to chat! 
 Go to https://developer.amazon.com/alexa/console/ask and login with your credentials. You should find the skill that has been deployed by SAP conversational AI. Click the skill name.
-![Alexa Skills]()
+![Alexa Skills](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/ChatbotChannels5.png)
 
 On the next page, open the “Test” tab. Set the “Skill testing is enabled in:” drop down to “Development”, and we’re all set to start the chat!
-![Alexa developer console]()
+![Alexa developer console](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/ChatbotChannels6.png)
 
 To start chatting with Amazon Alexa click and hold the microphone icon. “Ask <your invocation name> to register business partner”
-![]()
+![Chat!](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/ChatbotChannels7.png)
  
 If Alexa response with “Please give me your first and last name” you are talking to your chatbot in SAP conversational AI! Continue on chatting and see if you can register yourself through Amazon Alexa.
 
