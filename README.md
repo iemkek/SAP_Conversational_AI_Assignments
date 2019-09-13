@@ -7,6 +7,14 @@ At the end of this exercise we want to achieve the following functionality:
 ## Webhook
 Make sure you have all prerequisites set up before starting with this assignment. So before starting, you should have already succesfully deployed the "hello world" app from the prerequisites tutorial to the SCP Cloud Foundry environment. The prerequisites tutorial can be found [here](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/772b45ce6c46492b908d4c985add932a.html).
 
+> **Webhook** -
+> At many points in your conversation, you most likely want to retrieve business information or connect to an external system to perform actions. You can do this through webhooks. A webhook is a simple HTTP call to a script.
+
+During this assignment we will be using the chatbot memory to store the important values given to us by the user.
+
+> **Conversation memory** -
+> Each conversation with a unique user has a memory object from the beginning to the end of the conversation. This memory persists during the entire conversation; you can update it at any time or clear it whenever you want.
+
 #### Step 1: Create a folder
 Create a new folder for your webhook application
 
