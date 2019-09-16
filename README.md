@@ -55,7 +55,7 @@ Open the package.json file in your favourite text/code editor (like [Notepad++](
   },  
   "scripts": {
     "start": "node webhook.js"
-  },
+  }
 }
 ```
 
