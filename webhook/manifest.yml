@@ -1,5 +1,0 @@
----
-applications:
-- name: webhookRecast
-  path: .
-  memory: 128M
