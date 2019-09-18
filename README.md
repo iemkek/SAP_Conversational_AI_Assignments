@@ -173,7 +173,7 @@ Enter the complete application url in the input box followed by:
 /postFullName
 ```
 
-Add the following if statement to the message group:
+Add the following IF statement to the message group by pressing the ADD CONDITION button and typing:
 
 ```
 IF #person.fullname is-present
