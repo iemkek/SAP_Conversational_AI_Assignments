@@ -20,6 +20,8 @@ Create a new bot in the SAP Conversational AI environment by clicking the NEW BO
 3) Type of data "Non-personal", End user "Non-vulnerable"
 4) Skip 
 
+Click the "CREATE A BOT" button
+
 #### Step 4: Create intent
 > **Intent** - 
 > An intent is a box of expressions that mean the same thing but are constructed in different ways. 
@@ -45,7 +47,7 @@ Enter expression: Register as business partner
 > **Skill** -
 > A skill is a block of conversation that has a clear purpose and that your bot can execute to achieve a goal. It can be as simple as the ability to greet someone, but it can also be more complex, like giving movie suggestions based on information provided by the user.
 
-Go to the Build tab and press the Create skill button. A skill can be executed after the bot has detected a certain intent from the user input. Call your skill "createbp". The skill should now be visible on the canvas.
+Go to the Build tab and press the Create skill button. A skill can be executed after the bot has detected a certain intent from the user input. Call your skill "createbp". Leave the skill type as it is. The skill should now be visible on the canvas.
 
 ![Create skill](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponse4.png)
 
@@ -59,13 +61,13 @@ If @createbp is-present
 ![Skill trigger](https://github.com/iemkek/SAP_Conversational_AI_Assignments/blob/master/img/simpleResponse5.png)
 
 #### Step 8: Define actions
-Go to the Actions tab. Press ADD NEW MESSAGE GROUP and then select SEND MESSAGE. In the message input field, enter:
+Go to the Actions tab. Press ADD NEW MESSAGE GROUP and then select SEND MESSAGE. Choose the TEXT option. In the message input field, enter:
 
 ```
 Please give me your first and last name
 ```
 
-Add the following IF statement to the message group:
+Add the following IF statement to the message group by pressing the ADD CONDITION button and typing:
 
 ```
 IF #job is-present
