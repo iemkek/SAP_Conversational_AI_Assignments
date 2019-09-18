@@ -263,7 +263,7 @@ Enter the complete application url in the input box followed by:
 /postCreateBusinessPartner
 ```
 
-Add the following if statement to the message group:
+Add the following IF statement to the message group by pressing the ADD CONDITION button and typing:
 
 ```
 IF _sentiment is positive OR _sentiment is very positive
