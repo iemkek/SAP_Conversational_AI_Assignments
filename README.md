@@ -19,8 +19,8 @@ Enter the following details in the corresponding steps.
 
 1) Skip
 2) Enter bot name "createbp"
-3.1) Type of data "Non-personal"
-3.2) End user "Non-vulnerable"
+3.a) Type of data "Non-personal"
+3.b) End user "Non-vulnerable"
 4) Skip 
 
 #### Step 4: Create intent
