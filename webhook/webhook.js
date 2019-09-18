@@ -112,8 +112,8 @@ app.post('/postCreateBusinessPartner', (req, res) => {
 	  url: sUrl,
 	  baseURL: sBaseUrl,
 	  auth: {
-		username: 'IQIBT16',
-		password: 'Innov8ion2019'
+		username: 'XXXXXXX',
+		password: 'XXXXXXX'
 	  },
 	  headers: {'X-CSRF-Token': 'Fetch'}
 	})
@@ -143,8 +143,8 @@ app.post('/postCreateBusinessPartner', (req, res) => {
 		  url: sUrl,
 		  baseURL: sBaseUrl,
 		  auth: {
-			username: 'IQIBT16',
-			password: 'Innov8ion2019'
+			username: 'XXXXXXX',
+			password: 'XXXXXXX'
 		  },
 		  headers: {
 			'Content-Type': 'application/json',
@@ -195,8 +195,8 @@ app.post('/postGetBusinessPartner', (req, res) => {
 	  url: sUrl,
 	  baseURL: sBaseUrl,
 	  auth: {
-		username: 'IQIBT16',
-		password: 'Innov8ion2019'
+		username: 'XXXXXXX',
+		password: 'XXXXXXX'
 	  }
 	})
 	.then(function (response) { 
